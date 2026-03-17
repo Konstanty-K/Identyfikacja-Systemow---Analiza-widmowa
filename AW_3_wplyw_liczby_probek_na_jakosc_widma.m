@@ -20,3 +20,5 @@ for i = 1:length(Ns)
     legend('Piki: 5,10,30 Hz');
 end
 sgtitle('Wpływ długości okna N na widmo amplitudowe DFT');
+
+%% pojawiły się dodatkowe prążki widma - świadczy to o "wycieku"
