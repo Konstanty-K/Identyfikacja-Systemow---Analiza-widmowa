@@ -65,34 +65,34 @@ f = (0:N-1)*(fs/N);
 
 % Plot PHI_s_xx_h (rectangular vs Hanning)
 subplot(3,2,1);
-stem(f, abs(PHI_s_xx_p), 'b-');
+plot(f, abs(PHI_s_xx_p), 'b-');
 xlim([0 fs/2]); title('PHI\_s\_xx (rectangular)');
 xlabel('Frequency (Hz)'); ylabel('\Phi_{s,xx}(f)'); grid on;
 
 subplot(3,2,2);
-stem(f, abs(PHI_s_xx_h), 'r-');
+plot(f, abs(PHI_s_xx_h), 'r-');
 xlim([0 fs/2]); title('PHI\_s\_xx (Hanning)');
 xlabel('Frequency (Hz)'); ylabel('\Phi_{s,xx}(f)'); grid on;
 
 % Plot PHI_s_ee_h (rectangular vs Hanning)
 subplot(3,2,3);
-stem(f, abs(PHI_s_ee_p), 'b-');
+plot(f, abs(PHI_s_ee_p), 'b-');
 xlim([0 fs/2]); title('PHI\_s\_ee (rectangular)');
 xlabel('Frequency (Hz)'); ylabel('\Phi_{s,ee}(f)'); grid on;
 
 subplot(3,2,4);
-stem(f, abs(PHI_s_ee_h), 'r-');
+plot(f, abs(PHI_s_ee_h), 'r-');
 xlim([0 fs/2]); title('PHI\_s\_ee (Hanning)');
 xlabel('Frequency (Hz)'); ylabel('\Phi_{s,ee}(f)'); grid on;
 
 % Plot PHI_s_vv_h (rectangular vs Hanning)
 subplot(3,2,5);
-stem(f, abs(PHI_s_vv_p), 'b-');
+plot(f, abs(PHI_s_vv_p), 'b-');
 xlim([0 fs/2]); title('PHI\_s\_vv (rectangular)');
 xlabel('Frequency (Hz)'); ylabel('\Phi_{s,vv}(f)'); grid on;
 
 subplot(3,2,6);
-stem(f, abs(PHI_s_vv_h), 'r-');
+plot(f, abs(PHI_s_vv_h), 'r-');
 xlim([0 fs/2]); title('PHI\_s\_vv (Hanning)');
 xlabel('Frequency (Hz)'); ylabel('\Phi_{s,vv}(f)'); grid on;
 
