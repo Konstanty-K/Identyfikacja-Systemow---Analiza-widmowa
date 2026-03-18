@@ -19,8 +19,13 @@ w = 0.5*(1 + cos(pi*tau/Mw));           % okno Hanninga (18): 1+cos !
 Phi_k = Tp * abs(fft(r_vv.*w, N));      % DFT sumy z wzoru (16)
 
 figure;
-plot(f, Phi_p(1:N/2),'b-', f, Phi_k(1:N/2),'r-', 'LineWidth',1.5);
-title('PSD szumu kolorowego v(nTp)');
-xlabel('f [Hz]'); ylabel('\Phi_{vv}'); 
-legend('Periodogram (14)','Korelogram (16)'); grid on; xlim([0 250]);
+subplot(2,1,1);
+plot(f, Phi_p(1:N/2),'b-','LineWidth',1.5);
+title('Periodogram (14)');
+xlabel('f [Hz]'); ylabel('\Phi_{vv}'); grid on; xlim([0 250]);
+
+subplot(2,1,2);
+plot(f, Phi_k(1:N/2),'r-','LineWidth',1.5);
+title('Korelogram (16)');
+xlabel('f [Hz]'); ylabel('\Phi_{vv}'); grid on; xlim([0 250]);
 
